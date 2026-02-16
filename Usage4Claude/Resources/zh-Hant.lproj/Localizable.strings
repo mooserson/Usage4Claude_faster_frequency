@@ -14,7 +14,7 @@
 "menu.web_usage" = "檢視 Claude 用量";
 "menu.coffee" = "Buy Me A Coffee";
 "menu.github_sponsor" = "GitHub Sponsor";
-"menu.quit" = "結束 Usage4Claude";
+"menu.quit" = "結束 Usage4Claude H4cked";
 "menu.account" = "帳戶";
 "menu.account_prefix" = "帳戶:";
 
@@ -55,7 +55,7 @@
 "settings.general.refresh_section" = "重新整理設定";
 "settings.general.refresh_mode" = "重新整理模式";
 "settings.general.refresh_interval" = "固定重新整理頻率";
-"settings.general.refresh_hint_smart" = "根據使用狀況自動調整重新整理頻率（活躍時1分鐘，閒置時最长10分鐘）";
+"settings.general.refresh_hint_smart" = "根據使用狀況自動調整重新整理頻率（活躍時10秒，閒置時最长10分鐘）";
 "settings.general.refresh_hint_fixed" = "按照設定的固定時間間隔重新整理資料";
 "settings.general.language_section" = "語言設定";
 "settings.general.interface_language" = "介面語言";
@@ -100,7 +100,7 @@
 "settings.about.copyright" = "© 2025 All Rights Reserved";
 
 // MARK: - Welcome View
-"welcome.title" = "歡迎使用 Usage4Claude";
+"welcome.title" = "歡迎使用 Usage4Claude H4cked";
 "welcome.subtitle" = "開始之前，請先設定您的認證資訊";
 "welcome.setup_button" = "前往設定認證資訊";
 "welcome.later_button" = "稍後設定";
@@ -152,7 +152,7 @@
 "language.korean" = "한국어";
 
 // MARK: - Window Titles
-"window.settings_title" = "Usage4Claude 設定";
+"window.settings_title" = "Usage4Claude H4cked 設定";
 "window.welcome_title" = "歡迎";
 
 // MARK: - Usage Data Formatting

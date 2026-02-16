@@ -109,7 +109,7 @@ struct DiagnosticReport: Codable {
     /// 生成 Markdown 格式的完整报告
     func toMarkdown() -> String {
         var report = """
-        # Usage4Claude Diagnostic Report
+        # Usage4Claude H4cked Diagnostic Report
 
         **⚠️ PRIVACY NOTICE**: All sensitive information has been automatically redacted.  
         **✅ Safe to share**: This report contains no complete credentials or personal data.  

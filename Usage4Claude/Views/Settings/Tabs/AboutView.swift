@@ -29,7 +29,7 @@ struct AboutView: View {
             
             // 应用名称和版本
             VStack(spacing: 4) {
-                Text("Usage4Claude")
+                Text("Usage4Claude H4cked")
                     .font(.title)
                     .fontWeight(.bold)
                 

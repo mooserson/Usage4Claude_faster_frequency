@@ -14,7 +14,7 @@
 "menu.web_usage" = "View Claude Usage";
 "menu.coffee" = "Buy Me A Coffee";
 "menu.github_sponsor" = "GitHub Sponsor";
-"menu.quit" = "Quit Usage4Claude";
+"menu.quit" = "Quit Usage4Claude H4cked";
 "menu.account" = "Account";
 "menu.account_prefix" = "Account:";
 
@@ -55,7 +55,7 @@
 "settings.general.refresh_section" = "Refresh Settings";
 "settings.general.refresh_mode" = "Refresh Mode";
 "settings.general.refresh_interval" = "Fixed Refresh Interval";
-"settings.general.refresh_hint_smart" = "Automatically adjust refresh frequency based on usage (1 min when active, up to 10 min when idle)";
+"settings.general.refresh_hint_smart" = "Automatically adjust refresh frequency based on usage (10s when active, up to 10 min when idle)";
 "settings.general.refresh_hint_fixed" = "Refresh data at fixed time intervals";
 "settings.general.language_section" = "Language Settings";
 "settings.general.interface_language" = "Interface Language";
@@ -100,7 +100,7 @@
 "settings.about.copyright" = "© 2025 All Rights Reserved";
 
 // MARK: - Welcome View
-"welcome.title" = "Welcome to Usage4Claude";
+"welcome.title" = "Welcome to Usage4Claude H4cked";
 "welcome.subtitle" = "Please configure your authentication information before getting started";
 "welcome.setup_button" = "Configure Authentication";
 "welcome.later_button" = "Set Up Later";
@@ -152,7 +152,7 @@
 "language.korean" = "한국어";
 
 // MARK: - Window Titles
-"window.settings_title" = "Usage4Claude Settings";
+"window.settings_title" = "Usage4Claude H4cked Settings";
 "window.welcome_title" = "Welcome";
 
 // MARK: - Usage Data Formatting
