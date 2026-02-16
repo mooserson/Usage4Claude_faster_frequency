@@ -176,7 +176,7 @@ class DataRefreshManager: ObservableObject {
     func refreshOnPopoverOpen() {
         let now = Date()
 
-        // 用户打开详细界面，强制切换到活跃模式（1分钟刷新）
+        // 用户打开详细界面，强制切换到活跃模式（10秒刷新）
         if settings.refreshMode == .smart {
             settings.currentMonitoringMode = .active
             settings.unchangedCount = 0
@@ -205,7 +205,7 @@ class DataRefreshManager: ObservableObject {
         }
         #endif
 
-        // 用户主动刷新，强制切换到活跃模式（1分钟刷新）
+        // 用户主动刷新，强制切换到活跃模式（10秒刷新）
         if settings.refreshMode == .smart {
             settings.currentMonitoringMode = .active
             settings.unchangedCount = 0

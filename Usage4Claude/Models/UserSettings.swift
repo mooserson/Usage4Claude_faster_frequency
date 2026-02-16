@@ -113,9 +113,9 @@ enum RefreshInterval: Int, CaseIterable, Codable {
 
 /// 监控模式（内部使用，智能频率下的4级模式）
 enum MonitoringMode: String, Codable {
-    /// 活跃模式 - 1分钟刷新
+    /// 活跃模式 - 10秒刷新
     case active = "active"
-    /// 短期静默 - 3分钟刷新
+    /// 短期静默 - 30秒刷新
     case idleShort = "idle_short"
     /// 中期静默 - 5分钟刷新
     case idleMedium = "idle_medium"
@@ -126,9 +126,9 @@ enum MonitoringMode: String, Codable {
     var interval: Int {
         switch self {
         case .active:
-            return 60      // 1分钟
+            return 10      // 10秒
         case .idleShort:
-            return 180     // 3分钟
+            return 30      // 30秒
         case .idleMedium:
             return 300     // 5分钟
         case .idleLong:
@@ -864,7 +864,7 @@ class UserSettings: ObservableObject {
     private func switchToActiveMode() {
         guard currentMonitoringMode != .active else { return }
 
-        Logger.settings.debug("检测到使用变化，切换到活跃模式 (1分钟)")
+        Logger.settings.debug("检测到使用变化，切换到活跃模式 (10秒)")
         currentMonitoringMode = .active
         unchangedCount = 0
         NotificationCenter.default.post(name: .refreshIntervalChanged, object: nil)
@@ -890,7 +890,7 @@ class UserSettings: ObservableObject {
     private func calculateNewMode() -> MonitoringMode? {
         switch currentMonitoringMode {
         case .active:
-            // 活跃模式：连续3次无变化（3分钟） -> 短期静默
+            // 活跃模式：连续3次无变化（30秒） -> 短期静默
             return unchangedCount >= 3 ? .idleShort : nil
         case .idleShort:
             // 短期静默：连续6次无变化（18分钟） -> 中期静默
@@ -910,8 +910,8 @@ class UserSettings: ObservableObject {
     ///   - to: 新模式
     private func logModeTransition(from: MonitoringMode, to: MonitoringMode) {
         let modeNames: [MonitoringMode: String] = [
-            .active: "活跃 (1分钟)",
-            .idleShort: "短期静默 (3分钟)",
+            .active: "活跃 (10秒)",
+            .idleShort: "短期静默 (30秒)",
             .idleMedium: "中期静默 (5分钟)",
             .idleLong: "长期静默 (10分钟)"
         ]
